@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is where the magic happens :D</title>
+	<style>
+		body {
+			background-color: grey;
+			font-family: sans-serif;
+		}
+		
+		#heading1 {
+			font-weight: lighter;
+		}
+		
+		#heading1::selection {
+			background-color: slateblue;		
+		}
+		
+		#div1 {
+			padding: 10px;
+			filter: drop-shadow(10px 10px 5px black);
+		}
+		
+		#div2 {
+			padding: 10px;
+			filter: drop-shadow(10px 10px 5px black);	
+		}
+		
+		#div3 {
+			padding: 10px;
+			filter: drop-shadow(10px 10px 5px black);
+		}
+		
+		#div4 {
+			padding: 10px;
+			filter: drop-shadow(10px 10px 5px black);
+		}
+	</style>
+	<script>
+		document.addEventListener('DOMContentLoaded', function(){
+			document.querySelector('#twenty').onclick = function(){
+				document.querySelector('#heading1').style.fontSize = '20px';	
+			};
+			document.querySelector('#thirtysix').onclick = function(){
+				document.querySelector('#heading1').style.fontSize = '36px';			
+			};
+			document.querySelector('#seventytwo').onclick = function(){
+				document.querySelector('#heading1').style.fontSize = '72px';
+			};
+			document.querySelector('#freeserif').onclick = function(){
+				document.querySelector('#heading1').style.fontFamily = 'FreeSerif';	
+			};
+			document.querySelector('#mono').onclick = function(){
+				document.querySelector('#heading1').style.fontFamily = 'Mono';			
+			};
+			document.querySelector('#purisa').onclick = function(){
+				document.querySelector('#heading1').style.fontFamily = 'Purisa';			
+			};
+			document.querySelector('#green').onclick = function(){
+				document.querySelector('#heading1').style.color = 'LightGreen';			
+			};
+			document.querySelector('#blue').onclick = function(){
+				document.querySelector('#heading1').style.color = 'SkyBlue';			
+			};
+			document.querySelector('#red').onclick = function(){
+				document.querySelector('#heading1').style.color = 'Salmon';			
+			};
+			document.querySelector('#bold').onclick = function(){
+				document.querySelector('#heading1').style.fontWeight = 'bold';			
+			};
+			document.querySelector('#lighter').onclick = function(){
+				document.querySelector('#heading1').style.fontWeight = 'lighter';			
+			};
+			document.querySelector('#oblique').onclick = function(){
+				document.querySelector('#heading1').style.fontStyle = 'oblique';			
+			};
+			document.querySelector('#underline').onclick = function(){
+				document.querySelector('#heading1').style.textDecoration = 'underline';			
+			};
+			document.querySelector('#normal').onclick = function(){
+				document.querySelector('#heading1').style.fontStyle = 'normal';			
+			};
+		});
+	</script>
+</head>
+<body>
+	<h1 id="heading1">Let's change this styling!</h1>
+	
+	<!--In case I want to apply this styling to the h2 headings, I gave them ids -->
+	
+	<h2 id="fontsize">Choose your font size</h2>
+	<div id="div1">
+		<button id="twenty">20 pixels</button>
+		<button id="thirtysix">36 pixels</button>
+		<button id="seventytwo">72 pixels, are you mad?!</button>
+	</div>
+	
+	<h2 id="fontfam">Choose your font family</h2>
+	<div id="div2">
+	<button id="freeserif">FreeSerif</button>
+	<button id="mono">Mono</button>
+	<button id="purisa">Purisa</button>
+	</div>
+	
+	<h2 id="fontcol">Choose your font color</h2>
+	<div id="div3">
+	<button id="green">Green</button>
+	<button id="blue">Blue</button>
+	<button id="red">Red (well, sort of)</button>
+	</div>
+	
+	<h2>Choose your font weight and style</h2>
+	<div id="div4">
+	<button id="bold">Bold</button>
+	<button id="lighter">Lighter</button>
+	<button id="oblique">Oblique</button>
+	<button id="underline">Underline</button>
+	<button id="normal">Normal</button>
+	</div>
+</body>
+</html>	
